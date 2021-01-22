@@ -9,8 +9,6 @@ console.log('custom_bootstrap.js triggered...');
 //   }
 // }, 2000);
 
-const windowWith = window.with;
-
 window.onload = () => {
   console.log('window loaded...');
 
@@ -24,19 +22,21 @@ window.onload = () => {
 
   // Scale fullscreen slideshows
   setTimeout(() => {
-    var galleryFullscreenSlideshow =  document.getElementsByClassName('gallery-fullscreen-slideshow');
+    const galleryFullscreenSlideshow =  document.getElementsByClassName('gallery-fullscreen-slideshow');
     if (galleryFullscreenSlideshow) {
       galleryFullscreenSlideshow.forEach(slideshow => {
-        if (windowWith <= 576) {
+        console.log(slideshow);
+
+        if (window.innerWidth <= 576) {
           slideshow.style.height = "320px";
         };
-        if (windowWith <= 992) {
+        if (window.innerWidth <= 992) {
           slideshow.style.height = "480px";
         }
-        if (windowWith <= 1200) {
+        if (window.innerWidth <= 1200) {
           slideshow.style.height = "600px";
         }
-        if (windowWith > 1200) {
+        if (window.innerWidth > 1200) {
           slideshow.style.height = "700px";
         }
       })
