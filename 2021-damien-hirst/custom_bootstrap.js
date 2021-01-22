@@ -19,27 +19,44 @@ window.onload = () => {
   if (sqsBlockCode) {
     sqsBlockCode.forEach(blockCode => {
       blockCode.parentNode.style.padding = "0";
-      console.log(blockCode);
     })
   };
 
   // Scale fullscreen slideshows
-  const galleryFullscreenSlideshow =  document.getElementsByClassName('gallery-fullscreen-slideshow');
-  galleryFullscreenSlideshow.forEach(slideshow => {
-    if (windowWith <= 576) {
-      slideshow.style.height = "320px";
-    };
-    if (windowWith <= 992) {
-      slideshow.style.height = "480px";
-    }
-    if (windowWith <= 1200) {
-      slideshow.style.height = "600px";
-    }
-    if (windowWith > 1200) {
-      slideshow.style.height = "700px";
-    }
-  })
+
 }
+
+MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+var observer = new MutationObserver(function(mutations, observer) {
+    // fired when a mutation occurs
+    console.log(mutations, observer);
+    var galleryFullscreenSlideshow =  document.getElementsByClassName('gallery-fullscreen-slideshow');
+    if (galleryFullscreenSlideshow) {
+      galleryFullscreenSlideshow.forEach(slideshow => {
+        if (windowWith <= 576) {
+          slideshow.style.height = "320px";
+        };
+        if (windowWith <= 992) {
+          slideshow.style.height = "480px";
+        }
+        if (windowWith <= 1200) {
+          slideshow.style.height = "600px";
+        }
+        if (windowWith > 1200) {
+          slideshow.style.height = "700px";
+        }
+      })
+    }
+});
+
+// define what element should be observed by the observer
+// and what types of mutations trigger the callback
+// observer.observe(document, {
+//   subtree: true,
+//   attributes: true
+//   //...
+// });
 
 
 // RESPONSIVE TEMPLATE
