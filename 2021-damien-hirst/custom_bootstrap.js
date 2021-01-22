@@ -22,6 +22,8 @@ window.onload = () => {
 
   // Scale fullscreen slideshows
   setTimeout(() => {
+    console.log('Timeout triggered...');
+
     const galleryFullscreenSlideshow =  document.getElementsByClassName('gallery-fullscreen-slideshow');
     if (galleryFullscreenSlideshow) {
       galleryFullscreenSlideshow.forEach(slideshow => {
