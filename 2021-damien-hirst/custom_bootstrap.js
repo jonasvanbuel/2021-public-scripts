@@ -13,10 +13,6 @@ console.log('custom_bootstrap.js triggered...');
 // Custom code blocks
 window.onload = () => {
   console.log('window loaded...');
-}
-
-
-setTimeout(function() {
   const sqsBlockCode = document.getElementsByClassName('sqs-block-code');
   if (sqsBlockCode) {
     sqsBlockCode.forEach(blockCode => {
@@ -24,6 +20,11 @@ setTimeout(function() {
       console.log(blockCode);
     })
   }
-}, 2000);
+}
+
+
+// setTimeout(function() {
+
+// }, 2000);
 
 
