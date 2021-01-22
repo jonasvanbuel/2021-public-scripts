@@ -29,21 +29,25 @@ window.onload = () => {
       galleryFullscreenSlideshow.forEach(slideshow => {
         console.log(slideshow);
 
-        if (window.innerWidth <= 576) {
-          slideshow.style.height = "320px";
-        };
-        if (window.innerWidth <= 992) {
-          slideshow.style.height = "480px";
+        if (window.innerWidth > 1200) {
+          slideshow.style.height = "700px";
+          console.log(slideshow);
         }
         if (window.innerWidth <= 1200) {
           slideshow.style.height = "600px";
+          console.log(slideshow);
         }
-        if (window.innerWidth > 1200) {
-          slideshow.style.height = "700px";
+        if (window.innerWidth <= 992) {
+          slideshow.style.height = "480px";
+          console.log(slideshow);
         }
+        if (window.innerWidth <= 576) {
+          slideshow.style.height = "320px";
+          console.log(slideshow);
+        };
       })
     }
-  }, 2000);
+  }, 1000);
 }
 
 
