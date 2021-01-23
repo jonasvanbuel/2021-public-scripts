@@ -45,8 +45,10 @@ window.onload = () => {
   targetIds.forEach(target => {
     const contentWrapper = document.getElementById('anchor-stripper-fb').closest(".content-wrapper");
     const sectionBackground = contentWrapper.previousElementSibling;
-    sectionBackground.getElementsByTagName('img')[0].style.objectFit = "contain";
-    // sectionBackground.getElementsByTagName('img')[0].style.maxWidth = "130vw";
+    // sectionBackground.getElementsByTagName('img')[0].style.objectFit = "contain";
+
+    const pageSection = sectionBackground.closest(".page-section");
+    pageSection.style.minHeight = "50vw";
   });
 
 
