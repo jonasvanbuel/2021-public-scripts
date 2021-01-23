@@ -54,6 +54,7 @@ div.content-wrapper {
   font-weight: 700;
 }
 
+
 /* BOOTSTRAP CAROUSEL */
 #carouselExampleSlidesOnly {
   margin: 0 auto;
@@ -130,6 +131,12 @@ No media query since this is the default in Bootstrap*/
     margin-left: 40px;
   }
 
+  /* CODE BLOCK - FULL BLEED IMAGE */
+  .fb-img {
+    width: 130%;
+    position: absolute;
+    left: -15%;
+  }
 
 /*  #description-coral-love {
     padding: 0;
