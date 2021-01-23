@@ -24,26 +24,55 @@ window.onload = () => {
   const galleryFullscreenSlideshow =  document.getElementsByClassName('gallery-fullscreen-slideshow');
   if (galleryFullscreenSlideshow) {
     galleryFullscreenSlideshow.forEach(slideshow => {
-      console.log(slideshow);
-
       if (window.innerWidth > 1200) {
         slideshow.style.height = "700px";
-        console.log(slideshow);
       }
       if (window.innerWidth <= 1200) {
         slideshow.style.height = "600px";
-        console.log(slideshow);
       }
       if (window.innerWidth <= 992) {
         slideshow.style.height = "480px";
-        console.log(slideshow);
       }
       if (window.innerWidth <= 576) {
         slideshow.style.height = "320px";
-        console.log(slideshow);
       };
     })
   };
+
+  // CHANGE HEIGHT ALL FULL BLEED ELEMENTS === ALL ELEMENTS...
+
+  // const backgroundWidthFullBleed =  document.getElementsByClassName('background-width--full-bleed');
+  // if (backgroundWidthFullBleed) {
+  //   backgroundWidthFullBleed.forEach(section => {
+  //     console.log(section);
+  //     if (section.innerText === "") {
+  //       if (window.innerWidth > 1200) {
+  //         section.style.height = "700px";
+  //         const background = section.getElementsByClassName('section-background')[0];
+  //         background.style.height = "700px";
+  //         background.style.margin = "auto 0";
+  //       }
+  //       if (window.innerWidth <= 1200) {
+  //         section.style.height = "600px";
+  //         const background = section.getElementsByClassName('section-background')[0];
+  //         background.style.height = "600px";
+  //         background.style.margin = "auto 0";
+  //       }
+  //       if (window.innerWidth <= 992) {
+  //         section.style.height = "480px";
+  //         const background = section.getElementsByClassName('section-background')[0];
+  //         background.style.height = "480px";
+  //         background.style.margin = "auto 0";
+  //       }
+  //       if (window.innerWidth <= 576) {
+  //         section.style.height = "320px";
+  //         const background = section.getElementsByClassName('section-background')[0];
+  //         background.style.height = "320px";
+  //         background.style.margin = "auto 0";
+  //       };
+  //     }
+  //   })
+  // };
 
 }
 
