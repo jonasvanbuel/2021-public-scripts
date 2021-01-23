@@ -39,6 +39,29 @@ window.onload = () => {
     })
   };
 
+  // Scale full-bleed targeted section-backgrounds
+  const targetIds = [ "anchor-stripper-fb" ];
+
+  targetIds.forEach(target => {
+    const contentWrapper = document.getElementById('anchor-stripper-fb').closest(".content-wrapper");
+    const sectionBackground = contentWrapper.previousElementSibling;
+    sectionBackground.getElementsByTagName('img')[0].style.objectFit = "contain";
+    // sectionBackground.getElementsByTagName('img')[0].style.maxWidth = "130vw";
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // CHANGE HEIGHT ALL FULL BLEED ELEMENTS === ALL ELEMENTS...
 
   // const backgroundWidthFullBleed =  document.getElementsByClassName('background-width--full-bleed');
