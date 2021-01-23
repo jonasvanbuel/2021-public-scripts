@@ -1,29 +1,29 @@
 main#page.container {
-   padding: 0;
-  }
+  padding: 0;
+}
 
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-   max-width: none;
-  }
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: none;
+}
 
-  .gallery-fullscreen-slideshow {
-    height: auto;
-  }
+.gallery-fullscreen-slideshow {
+  height: auto;
+}
 
-  div.content-wrapper {
-   padding: 0;
-  }
+div.content-wrapper {
+  padding: 0;
+}
 
-  .location-pgs-custom-dot {
-    left: 0px;
-  }
+.location-pgs-custom-dot {
+  left: 0px;
+}
 
 .custom-flexbox {
   display: flex;
   flex-direction: column;
 }
 
-.custom-flexbox > .custom-right-side {
+.custom-flexbox > .custom-side {
   width: 100%;
 }
 
@@ -101,19 +101,17 @@ No media query since this is the default in Bootstrap*/
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .custom-container {
-    /*width: 80vw;*/
   }
 
   .custom-flexbox {
     flex-direction: row;
   }
 
-  .custom-flexbox > .custom-left-side,
-  .custom-flexbox > .custom-right-side {
+  .custom-flexbox > .custom-side {
     width: 50%;
   }
 
-  .custom-flexbox > .custom-left-side {
+  .custom-flexbox > .custom-side {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -123,15 +121,16 @@ No media query since this is the default in Bootstrap*/
     padding: 0px;
   }
 
-  #art-coral-love-container {
-    padding: 60px;
+  .custom-flexbox .artwork-details-container[data-position="left"] {
+    margin-right: 40px;
   }
 
-  #art-coral-love {
-
+  .custom-flexbox .artwork-details-container[data-position="right"] {
+    margin-left: 40px;
   }
 
-  #description-coral-love {
+
+/*  #description-coral-love {
     padding: 0;
     padding-top: 60px;
     padding-left: 40px;
@@ -139,7 +138,7 @@ No media query since this is the default in Bootstrap*/
 
   #description-coral-love > .artwork-details-container {
     margin-top: 0;
-  }
+  }*/
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
