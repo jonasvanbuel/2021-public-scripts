@@ -23,6 +23,10 @@ div.content-wrapper {
   flex-direction: column;
 }
 
+.custom-flexbox[data-txt-direction="right"] {
+  flex-direction: column-reverse;
+}
+
 .custom-flexbox > .custom-side {
   width: 100%;
 }
@@ -109,9 +113,6 @@ No media query since this is the default in Bootstrap*/
 
   .custom-flexbox > .custom-side {
     width: 50%;
-  }
-
-  .custom-flexbox > .custom-side {
     display: flex;
     flex-direction: column;
     justify-content: start;
