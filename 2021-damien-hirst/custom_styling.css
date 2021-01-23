@@ -134,7 +134,7 @@ No media query since this is the default in Bootstrap*/
   /* CODE BLOCK - FULL BLEED IMAGE */
   .fb-img {
     width: 130%;
-    position: absolute;
+    position: relative;
     left: -15%;
   }
 
