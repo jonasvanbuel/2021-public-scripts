@@ -43,7 +43,7 @@ window.onload = () => {
   const targetIds = [ "anchor-stripper-fb", "anchor-hexenyl-fb" ];
 
   targetIds.forEach(target => {
-    const contentWrapper = document.getElementById('anchor-stripper-fb').closest(".content-wrapper");
+    const contentWrapper = document.getElementById(target).closest(".content-wrapper");
     const sectionBackground = contentWrapper.previousElementSibling;
     // sectionBackground.getElementsByTagName('img')[0].style.objectFit = "contain";
 
