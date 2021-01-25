@@ -40,7 +40,7 @@ window.onload = () => {
   };
 
   // Scale full-bleed targeted section-backgrounds
-  const targetIds = [ "anchor-stripper-fb" ];
+  const targetIds = [ "anchor-stripper-fb", "anchor-hexenyl-fb" ];
 
   targetIds.forEach(target => {
     const contentWrapper = document.getElementById('anchor-stripper-fb').closest(".content-wrapper");
