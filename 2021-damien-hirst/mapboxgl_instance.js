@@ -126,7 +126,7 @@ window.onload = () => {
 
     // Circle element
     const dotMarkerEl = document.createElement('div');
-    marker.properties.moveAside === true ? dotmarkerEl.className = "dot-marker move-aside" : dotMarkerEl.className = "dot-marker";
+    dotMarkerEl.className = marker.properties.moveAside === true ? "dot-marker move-aside" : "dot-marker";
     dotMarkerEl.style = `background-color:${marker.properties.markerColor}`;
 
     // Popup element
