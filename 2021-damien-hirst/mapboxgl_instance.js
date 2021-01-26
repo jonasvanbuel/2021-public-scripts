@@ -18,7 +18,8 @@ const geojson = {
       address: 'Plazza Paracelsus 2,<br>7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/e6ZckP1XyYYJsd1j6',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#7a2f8a'
+      markerColor: '#7a2f8a',
+      moveAside: false
     }
   },
   {
@@ -32,7 +33,8 @@ const geojson = {
       address: 'Via Ludains 3, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/3SoqqpMZM3zGY2cm8',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#f36f23'
+      markerColor: '#f36f23',
+      moveAside: false
     }
   },
   {
@@ -46,7 +48,8 @@ const geojson = {
       address: 'Lake St Moritz, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/2Lu9nDnGgXTbeDEN9',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#5aa447'
+      markerColor: '#5aa447',
+      moveAside: false
     }
   },
   {
@@ -60,7 +63,8 @@ const geojson = {
       address: 'Via Dimlej 6, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/3SoqqpMZM3zGY2cm8',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#f6ee4e'
+      markerColor: '#f6ee4e',
+      moveAside: false
     }
   },
   {
@@ -74,7 +78,8 @@ const geojson = {
       address: 'Via Veglia 12, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/TQvKjJiNUzM64WN79',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#bf64a8'
+      markerColor: '#bf64a8',
+      moveAside: true
     }
   },
   {
@@ -88,14 +93,14 @@ const geojson = {
       address: 'Via Veglia 12, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/TQvKjJiNUzM64WN79',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#e5232c'
+      markerColor: '#e5232c',
+      moveAside: true
     }
   }]
 };
 
 window.onload = () => {
   // console.log('window loaded (from mapboxgl_instance)...');
-
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/jonasvanbuel/ckju13q210vxj19ofdvq8so5l', // stylesheet location
@@ -122,6 +127,7 @@ window.onload = () => {
     // Circle element
     const dotMarkerEl = document.createElement('div');
     dotMarkerEl.className = "dot-marker";
+    marker.moveAside ? dotmarkerEl.className = "moveAside" : null;
     dotMarkerEl.style = `background-color:${marker.properties.markerColor}`;
 
     // Popup element
@@ -137,5 +143,9 @@ window.onload = () => {
                             .setHTML(popupContent))
       .addTo(map)
   });
+
+  // Move church dots aside
+
+
 }
 
