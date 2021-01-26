@@ -1,4 +1,4 @@
-console.log('mapboxgl_instance.js triggered...');
+// console.log('mapboxgl_instance.js triggered...');
 
 // TODO: Hide accessToken
 mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYXN2YW5idWVsIiwiYSI6ImNranR5NjZ6ZzQzM3YzMHFvNWUyMzhsNHQifQ.FQsG7QWSzTDUmYskQEAuLQ';
@@ -94,7 +94,7 @@ const geojson = {
 };
 
 window.onload = () => {
-  console.log('window loaded (from mapboxgl_instance)...');
+  // console.log('window loaded (from mapboxgl_instance)...');
 
   var map = new mapboxgl.Map({
       container: 'map',
