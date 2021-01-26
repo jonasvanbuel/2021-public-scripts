@@ -93,45 +93,50 @@ const geojson = {
   }]
 };
 
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/jonasvanbuel/ckju13q210vxj19ofdvq8so5l', // stylesheet location
-    center: centerLocation, // starting position [lng, lat]
-    zoom: 13
-});
+window.onload = () => {
+  console.log('window loaded (from mapboxgl_instance)...');
 
-map.fitBounds([
-  [9.836229555003456,46.48338716026936],
-  [9.839961459203437,46.49840041968736]
-],
-{
-  padding: {top: 60, right: 100, bottom: 60, left: 60},
-  offset: [-20, 0]
-})
+  var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/jonasvanbuel/ckju13q210vxj19ofdvq8so5l', // stylesheet location
+      center: centerLocation, // starting position [lng, lat]
+      zoom: 13
+  });
 
-// add markers to map
-geojson.features.forEach(function(marker) {
+  map.fitBounds([
+    [9.836229555003456,46.48338716026936],
+    [9.839961459203437,46.49840041968736]
+  ],
+  {
+    padding: {top: 60, right: 100, bottom: 60, left: 60},
+    offset: [-20, 0]
+  })
 
-  // Marker element
-  // const markerEl = document.createElement('div');
-  // markerEl.className = 'marker';
+  // add markers to map
+  geojson.features.forEach(function(marker) {
 
-  // Circle element
-  const dotMarkerEl = document.createElement('div');
-  dotMarkerEl.className = "dot-marker";
-  dotMarkerEl.style = `background-color:${marker.properties.markerColor}`;
+    // Marker element
+    // const markerEl = document.createElement('div');
+    // markerEl.className = 'marker';
 
-  // Popup element
-  const popupContent = `
-    <h3 style="color:inherit;margin-bottom:12px;margin-top:0">${marker.properties.title}</h3>
-    <a href="${marker.properties.locationUrl}" target="_blank" style="margin-bottom:12px">${marker.properties.address}</a>
-    <a class="find-out-more" href="${marker.properties.moreInfoUrl}">Find out more</a>
-  `;
+    // Circle element
+    const dotMarkerEl = document.createElement('div');
+    dotMarkerEl.className = "dot-marker";
+    dotMarkerEl.style = `background-color:${marker.properties.markerColor}`;
 
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(dotMarkerEl)
-    .setLngLat(marker.geometry.coordinates)
-    .setPopup(new mapboxgl.Popup() // add popups
-                          .setHTML(popupContent))
-    .addTo(map)
-});
+    // Popup element
+    const popupContent = `
+      <h3 style="color:inherit;margin-bottom:12px;margin-top:0">${marker.properties.title}</h3>
+      <a href="${marker.properties.locationUrl}" target="_blank" style="margin-bottom:12px">${marker.properties.address}</a>
+      <a class="find-out-more" href="${marker.properties.moreInfoUrl}">Find out more</a>
+    `;
+
+    // make a marker for each feature and add to the map
+    new mapboxgl.Marker(dotMarkerEl)
+      .setLngLat(marker.geometry.coordinates)
+      .setPopup(new mapboxgl.Popup() // add popups
+                            .setHTML(popupContent))
+      .addTo(map)
+  });
+}
+
