@@ -144,7 +144,8 @@ window.onload = () => {
   });
 
   // Move church dots aside
-
-
+  const moveAside = document.querySelectorAll('.move-aside');
+  moveAside[0].style.margin = "-10px";
+  moveAside[1].style.margin = "10px";
 }
 
