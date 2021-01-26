@@ -128,7 +128,6 @@ window.onload = () => {
     const popupContent = `
       <h3 style="color:inherit;margin-bottom:12px;margin-top:0">${marker.properties.title}</h3>
       <a href="${marker.properties.locationUrl}" target="_blank" style="margin-bottom:12px">${marker.properties.address}</a>
-      <a class="find-out-more" href="${marker.properties.moreInfoUrl}">Find out more</a>
     `;
 
     // make a marker for each feature and add to the map
