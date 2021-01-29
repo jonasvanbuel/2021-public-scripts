@@ -1,3 +1,6 @@
+
+
+
 main#page.container {
   padding: 0;
 }
@@ -77,6 +80,9 @@ div.content-wrapper {
   cursor: auto;
 }
 
+
+
+
 /*RESPONSIVE TEMPLATE
 Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap*/
@@ -152,3 +158,6 @@ No media query since this is the default in Bootstrap*/
 /*Extra large devices (large desktops, 1200px and up)*/
 /*@media (min-width: 1200px) {
 }*/
+
+
+@import url("/partials/highlight-section.css");
