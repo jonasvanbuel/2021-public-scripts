@@ -1,5 +1,5 @@
-@import "/partials/general.css";
-@import "/partials/highlight-section.css";
+@import url("/partials/general.css");
+@import url("/partials/highlight-section.css");
 
 
 
