@@ -53,6 +53,7 @@ window.onload = () => {
   quoteArray.forEach(quote => {
     quote.closest(".sqs-block-code").style.padding = "0px";
     quote.closest(".content").style.marginTop = "120px";
+    quote.closest(".content-wrapper").style.marginBottom = "0px";
   })
 
 
