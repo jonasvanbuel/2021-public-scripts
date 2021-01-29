@@ -39,7 +39,7 @@ window.onload = () => {
     })
   };
 
-  // Scale full-bleed targeted section-backgrounds
+  // Full-bleed styling
   const fullBleedArray = document.getElementsByClassName('anchor-fb');
   fullBleedArray.forEach(el => {
     const contentWrapper = el.closest(".content-wrapper");
@@ -48,7 +48,7 @@ window.onload = () => {
     pageSection.style.minHeight = "50vw";
   })
 
-  // Space quotes
+  // Quote styling
   const quoteArray = document.getElementsByClassName('anchor-quote');
   quoteArray.forEach(quote => {
     quote.closest(".sqs-block-code").style.padding = "0px";
@@ -56,6 +56,11 @@ window.onload = () => {
     quote.closest(".content-wrapper").style.paddingBottom = "0px";
   })
 
+  // Gallery Grid styling
+  const gridArray = document.getElementsByClassName('gallery-grid');
+  gridArray.forEach(grid => {
+    grid.style.paddingTop = "200px";
+  })
 
   // CHANGE HEIGHT ALL FULL BLEED ELEMENTS === ALL ELEMENTS...
 
