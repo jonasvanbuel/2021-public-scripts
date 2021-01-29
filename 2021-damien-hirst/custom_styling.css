@@ -41,10 +41,7 @@ div.content-wrapper {
 }
 
 .custom-side[data-text-loc="top"] {
-  width: 70%;
-  margin: 64px;
-  color: red;
-  background-color: yellow;
+  width: 100%;
 }
 
 
@@ -166,6 +163,12 @@ No media query since this is the default in Bootstrap*/
     margin-left: 40px;
   }
 
+  .custom-side[data-text-loc="top"] {
+    width: 70%;
+    margin: 64px 0;
+    background-color: yellow;
+  }
+
   /* CODE BLOCK - FULL BLEED IMAGE */
   .fb-img {
     width: 130%;
@@ -173,15 +176,6 @@ No media query since this is the default in Bootstrap*/
     left: -15%;
   }
 
-/*  #description-coral-love {
-    padding: 0;
-    padding-top: 60px;
-    padding-left: 40px;
-  }
-
-  #description-coral-love > .artwork-details-container {
-    margin-top: 0;
-  }*/
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
