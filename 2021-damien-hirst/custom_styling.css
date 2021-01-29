@@ -30,17 +30,26 @@ div.content-wrapper {
   flex-direction: column;
 }
 
-.custom-flexbox[data-text-loc="right"] {
-  flex-direction: column-reverse;
-}
-
 .custom-flexbox > .custom-side {
   width: 100%;
 }
 
-.custom-side[data-text-loc="top"] {
-  width: 100%;
+.custom-flexbox[data-text-loc="left"] {
+  flex-direction: row;
 }
+
+.custom-flexbox[data-text-loc="right"] {
+  flex-direction: row-reverse;
+}
+
+.custom-flexbox[data-text-loc="top"] {
+  flex-direction: column;
+}
+
+.custom-flexbox[data-text-loc="bottom"] {
+  flex-direction: column-reverse;
+}
+
 
 
 
