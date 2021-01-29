@@ -24,14 +24,15 @@ div.content-wrapper {
 
 /* HIGHLIGHT SECTION */
 
-
 .custom-flexbox {
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
 }
 
 .custom-flexbox > .custom-side {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .custom-flexbox[data-text-loc="left"] {
