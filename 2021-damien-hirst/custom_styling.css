@@ -30,7 +30,7 @@ div.content-wrapper {
   flex-direction: column;
 }
 
-.custom-flexbox[data-txt-direction="right"] {
+.custom-flexbox[data-txt-loc="right"] {
   flex-direction: column-reverse;
 }
 
