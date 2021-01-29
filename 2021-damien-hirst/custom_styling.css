@@ -35,27 +35,27 @@ div.content-wrapper {
 }
 
 .custom-flexbox[data-text-loc="left"] {
-  flex-direction: row;
+
 }
 
 .custom-flexbox[data-text-loc="left"] .artwork-details-container {
-  margin-right: 40px;
+
 }
 
 .custom-flexbox[data-text-loc="right"] {
-  flex-direction: row-reverse;
+
 }
 
 .custom-flexbox[data-text-loc="right"] .artwork-details-container {
-  margin-left: 40px;
+
 }
 
 .custom-flexbox[data-text-loc="top"] {
-  flex-direction: column;
+
 }
 
 .custom-flexbox[data-text-loc="bottom"] {
-  flex-direction: column-reverse;
+
 }
 
 
@@ -165,22 +165,38 @@ No media query since this is the default in Bootstrap*/
     justify-content: start;
   }
 
+
+
   .custom-flexbox .artwork-details-container {
     padding: 0px;
   }
 
-  .custom-flexbox .artwork-details-container[data-position="left"] {
+  .custom-flexbox[data-text-loc="left"] {
+    flex-direction: row;
+  }
+
+  .custom-flexbox[data-text-loc="left"] .artwork-details-container {
     margin-right: 40px;
   }
 
-  .custom-flexbox .artwork-details-container[data-position="right"] {
+  .custom-flexbox[data-text-loc="right"] {
+    flex-direction: row-reverse;
+  }
+
+  .custom-flexbox[data-text-loc="right"] .artwork-details-container {
     margin-left: 40px;
   }
 
-  .custom-side[data-text-loc="top"] {
-    width: 70%;
-    margin: 64px 0;
+  .custom-flexbox[data-text-loc="top"] {
+    flex-direction: column;
   }
+
+  .custom-flexbox[data-text-loc="bottom"] {
+    flex-direction: column-reverse;
+  }
+
+
+
 
   /* CODE BLOCK - FULL BLEED IMAGE */
   .fb-img {
