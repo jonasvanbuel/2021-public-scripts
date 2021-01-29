@@ -48,7 +48,7 @@ div.content-wrapper {
 
 /* ARTWORK DETAILS */
 .custom-flexbox .artwork-details-container {
-  padding: 20px 0px
+  padding: 40px 0px
 }
 
 .artwork-details-container > p {
@@ -166,7 +166,6 @@ No media query since this is the default in Bootstrap*/
   .custom-side[data-text-loc="top"] {
     width: 70%;
     margin: 64px 0;
-    background-color: yellow;
   }
 
   /* CODE BLOCK - FULL BLEED IMAGE */
