@@ -40,15 +40,20 @@ window.onload = () => {
   };
 
   // Scale full-bleed targeted section-backgrounds
-  const elArray = document.getElementsByClassName('anchor-fb');
-  elArray.forEach(el => {
+  const fullBleedArray = document.getElementsByClassName('anchor-fb');
+  fullBleedArray.forEach(el => {
     const contentWrapper = el.closest(".content-wrapper");
     const sectionBackground = contentWrapper.previousElementSibling;
     const pageSection = sectionBackground.closest(".page-section");
     pageSection.style.minHeight = "50vw";
   })
 
-
+  // Space quotes
+  const quoteArray = document.getElementsByClassName('anchor-quote');
+  quoteArray.forEach(quote => {
+    quote.closest(".sqs-block-code").style.padding = "0px";
+    quote.closest(".content").style.marginTop = "120px";
+  })
 
 
   // CHANGE HEIGHT ALL FULL BLEED ELEMENTS === ALL ELEMENTS...
