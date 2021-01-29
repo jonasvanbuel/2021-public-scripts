@@ -38,8 +38,16 @@ div.content-wrapper {
   flex-direction: row;
 }
 
+.custom-flexbox[data-text-loc="left"] .artwork-details-container {
+  margin-right: 40px;
+}
+
 .custom-flexbox[data-text-loc="right"] {
   flex-direction: row-reverse;
+}
+
+.custom-flexbox[data-text-loc="right"] .artwork-details-container {
+  margin-left: 40px;
 }
 
 .custom-flexbox[data-text-loc="top"] {
@@ -56,9 +64,6 @@ div.content-wrapper {
 
 
 /* ARTWORK DETAILS */
-.custom-flexbox .artwork-details-container {
-  padding: 40px 0px
-}
 
 .artwork-details-container > p {
   margin: 0;
