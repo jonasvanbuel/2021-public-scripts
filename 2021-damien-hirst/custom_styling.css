@@ -35,32 +35,6 @@ div.content-wrapper {
   margin-bottom: 40px;
 }
 
-.custom-flexbox[data-text-loc="left"] {
-
-}
-
-.custom-flexbox[data-text-loc="left"] .artwork-details-container {
-
-}
-
-.custom-flexbox[data-text-loc="right"] {
-
-}
-
-.custom-flexbox[data-text-loc="right"] .artwork-details-container {
-
-}
-
-.custom-flexbox[data-text-loc="top"] {
-
-}
-
-.custom-flexbox[data-text-loc="bottom"] {
-
-}
-
-
-
 
 
 
@@ -88,7 +62,6 @@ div.content-wrapper {
 
 /* BOOTSTRAP CAROUSEL */
 
-
 #carouselExampleSlidesOnly {
   margin: 0 auto;
 }
@@ -110,7 +83,9 @@ div.content-wrapper {
   cursor: auto;
 }
 
-
+#proteus-carousel {
+  width: 100%;
+}
 
 
 
@@ -166,8 +141,6 @@ No media query since this is the default in Bootstrap*/
     justify-content: start;
   }
 
-
-
   .custom-flexbox .artwork-details-container {
     padding: 0px;
   }
@@ -196,7 +169,9 @@ No media query since this is the default in Bootstrap*/
     flex-direction: column-reverse;
   }
 
-
+  #proteus-carousel {
+    width: 75%;
+  }
 
 
   /* CODE BLOCK - FULL BLEED IMAGE */
