@@ -11,6 +11,11 @@ main#page.container {
   height: auto;
 }
 
+.loc-list-title {
+  display: flex;
+  justify-content: start;
+}
+
 div.content-wrapper {
   padding: 0;
 }
@@ -22,7 +27,6 @@ div.content-wrapper {
   position: relative;
   left: 0px;
 }
-
 
 
 
