@@ -16,6 +16,12 @@ main#page.container {
   justify-content: start;
 }
 
+.loc-list-title > h5 {
+  font-family: halyard-display;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 div.content-wrapper {
   padding: 0;
 }
