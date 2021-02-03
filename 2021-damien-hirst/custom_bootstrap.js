@@ -53,7 +53,8 @@ window.onload = () => {
   quoteArray.forEach(quote => {
     // quote.closest(".sqs-block-code").style.padding = "0px";
     // quote.closest(".content").style.marginTop = "140px";
-    // quote.closest(".content-wrapper").style.paddingBottom = "0px";
+    quote.closest(".content-wrapper").style.paddingTop = "160px";
+    quote.closest(".content-wrapper").style.paddingBottom = "120px";
   })
 
   // Gallery Grid styling
