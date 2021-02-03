@@ -24,16 +24,19 @@ div.content-wrapper {
 }
 
 
-/* HOME PAGE */
 
+
+/* HOME PAGE */
 .loc-list-title {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-top: -16px;
+  margin-bottom: 32px;
 }
 
 .loc-list-title > .location-pgs-custom-dot {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 .loc-list-title > h5 {
@@ -48,7 +51,6 @@ div.content-wrapper {
 
 
 /* HIGHLIGHT SECTION */
-
 .custom-flexbox {
   display: flex;
   flex-direction: column;
@@ -198,6 +200,10 @@ No media query since this is the default in Bootstrap*/
     width: 75%;
   }
 
+  .loc-list-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   /* CODE BLOCK - FULL BLEED IMAGE */
   .fb-img {
