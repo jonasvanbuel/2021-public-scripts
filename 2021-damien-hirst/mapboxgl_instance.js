@@ -17,9 +17,10 @@ const geojson = {
       title: 'Forum Paracelsus,<br>St. Moritz Bad',
       address: 'Plazza Paracelsus 2,<br>7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/e6ZckP1XyYYJsd1j6',
-      moreInfoUrl: '/uwr2m4-forum',
+      moreInfoUrl: '/forum',
       markerColor: '#7a2f8a',
-      moveAside: false
+      moveAside: false,
+      exhibitionType: 'Exhibition'
     }
   },
   {
@@ -29,12 +30,13 @@ const geojson = {
       coordinates: [9.837382652620704,46.49037730561599]
     },
     properties: {
-      title: 'Two Figures with a Drum, 2013',
+      title: 'Two Figures with a Drum',
       address: 'Via Ludains 3, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/3SoqqpMZM3zGY2cm8',
-      moreInfoUrl: '/uwr2m4-forum',
+      moreInfoUrl: '/two-figures',
       markerColor: '#f36f23',
-      moveAside: false
+      moveAside: false,
+      exhibitionType: 'Outdoor installation'
     }
   },
   {
@@ -44,12 +46,13 @@ const geojson = {
       coordinates: [9.843045172309075,46.495743903473056]
     },
     properties: {
-      title: 'The Monk, 2014',
+      title: 'The Monk',
       address: 'Lake St Moritz, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/2Lu9nDnGgXTbeDEN9',
-      moreInfoUrl: '/uwr2m4-forum',
+      moreInfoUrl: '/monk',
       markerColor: '#5aa447',
-      moveAside: false
+      moveAside: false,
+      exhibitionType: 'Outdoor installation'
     }
   },
   {
@@ -59,12 +62,13 @@ const geojson = {
       coordinates: [9.848247537562429,46.497075969819974]
     },
     properties: {
-      title: 'Temple, 2008',
+      title: 'Temple',
       address: 'Via Dimlej 6, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/3SoqqpMZM3zGY2cm8',
-      moreInfoUrl: '/uwr2m4-forum',
+      moreInfoUrl: '/temple',
       markerColor: '#f6ee4e',
-      moveAside: false
+      moveAside: false,
+      exhibitionType: 'Outdoor installation'
     }
   },
   {
@@ -77,7 +81,7 @@ const geojson = {
       title: 'Protestant Church, St. Moritz Dorf',
       address: 'Via Veglia 12, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/TQvKjJiNUzM64WN79',
-      moreInfoUrl: '/uwr2m4-forum',
+      moreInfoUrl: '/church',
       markerColor: '#006bff',
       moveAside: true
     }
@@ -89,12 +93,13 @@ const geojson = {
       coordinates: [9.839864288026092,46.49846347218508]
     },
     properties: {
-      title: 'Proteus, 2012',
+      title: 'Proteus',
       address: 'Via Veglia 12, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/TQvKjJiNUzM64WN79',
       moreInfoUrl: '/uwr2m4-forum',
       markerColor: '#e5232c',
-      moveAside: true
+      moveAside: true,
+      exhibitionType: 'Exhibition'
     }
   }]
 };
@@ -132,7 +137,7 @@ window.onload = () => {
     // Popup element
     const popupContent = `
       <h3 style="color:inherit;margin-bottom:12px;margin-top:0">${marker.properties.title}</h3>
-      <a href="${marker.properties.locationUrl}" target="_blank" style="margin-bottom:12px">${marker.properties.address}</a>
+      <a href="${marker.properties.moreInfoUrl}" style="margin-bottom:12px">${marker.properties.exhibitionType}</a>
     `;
 
     // make a marker for each feature and add to the map
