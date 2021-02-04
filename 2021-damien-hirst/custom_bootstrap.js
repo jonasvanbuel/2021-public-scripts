@@ -44,7 +44,7 @@ window.onload = () => {
   fullBleedArray.forEach(el => {
     const contentWrapper = el.closest(".content-wrapper");
     const sectionBackground = contentWrapper.previousElementSibling;
-    sectionBackground.style.maxHeight = "70vh";
+    sectionBackground.style.maxHeight = "85vh";
     const pageSection = sectionBackground.closest(".page-section");
     pageSection.style.minHeight = "70vw";
     pageSection.style.maxHeight = "70vh";
