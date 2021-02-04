@@ -83,7 +83,8 @@ const geojson = {
       locationUrl: 'https://goo.gl/maps/TQvKjJiNUzM64WN79',
       moreInfoUrl: '/church',
       markerColor: '#006bff',
-      moveAside: true
+      moveAside: true,
+      exhibitionType: 'Exhibition'
     }
   },
   {
@@ -99,7 +100,7 @@ const geojson = {
       moreInfoUrl: '/uwr2m4-forum',
       markerColor: '#e5232c',
       moveAside: true,
-      exhibitionType: 'Exhibition'
+      exhibitionType: 'Outdoor installation'
     }
   }]
 };
