@@ -45,7 +45,8 @@ window.onload = () => {
     const contentWrapper = el.closest(".content-wrapper");
     const sectionBackground = contentWrapper.previousElementSibling;
     const pageSection = sectionBackground.closest(".page-section");
-    pageSection.style.minHeight = "50vw";
+    pageSection.style.minHeight = "70vw";
+    pageSection.style.maxHeight = "70vh";
   })
 
   // Quote styling
@@ -60,7 +61,7 @@ window.onload = () => {
   // Gallery Grid styling
   const gridArray = document.getElementsByClassName('gallery-grid');
   gridArray.forEach(grid => {
-    grid.style.paddingTop = "200px";
+    grid.style.paddingTop = "120px";
   })
 
   // CHANGE HEIGHT ALL FULL BLEED ELEMENTS === ALL ELEMENTS...
