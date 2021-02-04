@@ -78,7 +78,7 @@ const geojson = {
       address: 'Via Veglia 12, 7500 St. Moritz',
       locationUrl: 'https://goo.gl/maps/TQvKjJiNUzM64WN79',
       moreInfoUrl: '/uwr2m4-forum',
-      markerColor: '#bf64a8',
+      markerColor: '#006bff',
       moveAside: true
     }
   },
