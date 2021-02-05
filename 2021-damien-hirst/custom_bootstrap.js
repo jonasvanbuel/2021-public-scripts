@@ -1,16 +1,6 @@
-console.log('custom_bootstrap.js triggered...');
 
-// General page styling
-// setTimeout(function() {
-//   const main = document.getElementsByTagName('main');
-//   if (main) {
-//     main[0].style.padding = "0";
-//     console.log(main[0]);
-//   }
-// }, 2000);
 
 window.onload = () => {
-  console.log('window loaded...');
 
   // Custom code blocks
   const sqsBlockCode = document.getElementsByClassName('sqs-block-code');
@@ -25,15 +15,12 @@ window.onload = () => {
   if (galleryFullscreenSlideshow) {
     galleryFullscreenSlideshow.forEach(slideshow => {
       if (window.innerWidth > 1200) {
-        // slideshow.style.height = "700px";
         slideshow.style.height = "100vh";
       }
       if (window.innerWidth <= 1200) {
-        // slideshow.style.height = "600px";
         slideshow.style.height = "100vh";
       }
       if (window.innerWidth <= 992) {
-        // slideshow.style.height = "480px";
         slideshow.style.height = "100vh";
       }
       if (window.innerWidth <= 576) {
@@ -47,10 +34,11 @@ window.onload = () => {
   fullBleedArray.forEach(el => {
     const contentWrapper = el.closest(".content-wrapper");
     const sectionBackground = contentWrapper.previousElementSibling;
-    sectionBackground.style.maxHeight = "85vh";
+    sectionBackground.style.height = "100%";
     const pageSection = sectionBackground.closest(".page-section");
-    pageSection.style.minHeight = "70vw";
-    pageSection.style.maxHeight = "70vh";
+    pageSection.style.height = "100vh";
+
+    // Responsive...
   })
 
   // Quote styling
