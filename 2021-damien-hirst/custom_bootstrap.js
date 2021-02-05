@@ -26,15 +26,15 @@ window.onload = () => {
     galleryFullscreenSlideshow.forEach(slideshow => {
       if (window.innerWidth > 1200) {
         // slideshow.style.height = "700px";
-        slideshow.style.height = "100%";
+        slideshow.style.height = "100vh";
       }
       if (window.innerWidth <= 1200) {
         // slideshow.style.height = "600px";
-        slideshow.style.height = "100%";
+        slideshow.style.height = "100vh";
       }
       if (window.innerWidth <= 992) {
         // slideshow.style.height = "480px";
-        slideshow.style.height = "100%";
+        slideshow.style.height = "100vh";
       }
       if (window.innerWidth <= 576) {
         slideshow.style.height = "320px";
