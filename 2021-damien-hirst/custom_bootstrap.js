@@ -36,9 +36,20 @@ window.onload = () => {
     const sectionBackground = contentWrapper.previousElementSibling;
     sectionBackground.style.height = "100%";
     const pageSection = sectionBackground.closest(".page-section");
-    pageSection.style.height = "100vh";
 
     // Responsive...
+    if (window.innerWidth > 1200) {
+      pageSection.style.height = "100vh";
+    }
+    if (window.innerWidth <= 1200) {
+      pageSection.style.height = "100vh";
+    }
+    if (window.innerWidth <= 992) {
+      pageSection.style.height = "100vh";
+    }
+    if (window.innerWidth <= 576) {
+      pageSection.style.height = "320px";
+    };
   })
 
   // Quote styling
