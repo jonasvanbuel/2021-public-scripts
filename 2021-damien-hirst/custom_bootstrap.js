@@ -39,16 +39,16 @@ window.onload = () => {
 
     // Responsive...
     if (window.innerWidth > 1200) {
-      pageSection.style.height = "100vh";
+      pageSection.style.minHeight = "100vh";
     }
     if (window.innerWidth <= 1200) {
-      pageSection.style.height = "100vh";
+      pageSection.style.minHeight = "100vh";
     }
     if (window.innerWidth <= 992) {
-      pageSection.style.height = "100vh";
+      pageSection.style.minHeight = "100vh";
     }
     if (window.innerWidth <= 576) {
-      pageSection.style.height = "320px";
+      pageSection.style.minHeight = "320px";
     };
   })
 
