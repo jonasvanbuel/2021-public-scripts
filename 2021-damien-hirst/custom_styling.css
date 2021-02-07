@@ -67,7 +67,6 @@ div.content-wrapper {
 
 
 /* ARTWORK DETAILS */
-
 .artwork-details-container > p {
   margin: 0;
 
@@ -84,7 +83,13 @@ div.content-wrapper {
   font-weight: 700;
 }
 
+sub {
+  bottom: -2px;
+}
 
+sup {
+  top: -5px;
+}
 
 
 
