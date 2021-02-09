@@ -22,7 +22,10 @@ div.content-wrapper {
   left: 0px;
 }
 
-
+/* Disable double underline throughout*/
+.sqsrte-large > a {
+  text-decoration: none;
+}
 
 
 /* HOME PAGE */
