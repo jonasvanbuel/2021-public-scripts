@@ -64,7 +64,7 @@ const geojson = {
     properties: {
       title: 'Temple',
       address: 'Via Dimlej 6, 7500 St. Moritz',
-      locationUrl: 'https://goo.gl/maps/3SoqqpMZM3zGY2cm8',
+      locationUrl: 'https://goo.gl/maps/wCJcdbLUAizvLdbT7',
       moreInfoUrl: '/temple',
       markerColor: '#f6ee4e',
       moveAside: false,
@@ -137,7 +137,9 @@ window.onload = () => {
 
     // Popup element
     const popupContent = `
-      <h3 style="color:inherit;margin-bottom:12px;margin-top:0">${marker.properties.title}</h3>
+      <a href="${marker.properties.moreInfoUrl}">
+        <h3 style="color:inherit;margin-bottom:12px;margin-top:0">${marker.properties.title}</h3>
+      </a>
       <a href="${marker.properties.moreInfoUrl}" style="margin-bottom:12px">${marker.properties.exhibitionType}</a>
     `;
 
