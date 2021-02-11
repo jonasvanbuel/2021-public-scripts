@@ -163,13 +163,13 @@ window.onload = () => {
   moveAside[0].addEventListener("mousedown", function() {
     console.log('eventListener triggered...');
     const popup = document.getElementsByClassName("mapboxgl-popup");
-    popup.style.left = "10px";
+    popup[0].style.left = "10px";
   });
   moveAside[1].style.margin = "-10px";
   moveAside[1].addEventListener("mousedown", function() {
     console.log('eventListener triggered...');
     const popup = document.getElementsByClassName("mapboxgl-popup");
-    popup.style.left = "-10px";
+    popup[0].style.left = "-10px";
   });
 }
 
