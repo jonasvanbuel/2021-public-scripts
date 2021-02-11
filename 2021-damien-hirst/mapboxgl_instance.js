@@ -159,7 +159,15 @@ window.onload = () => {
 
   // Move church dots aside
   const moveAside = document.querySelectorAll('.move-aside');
-  moveAside[1].style.margin = "-10px";
   moveAside[0].style.margin = "10px";
+  moveAside[0].addEventListener("mousedown", function() {
+    const popup = document.getElementsByClassName("mapboxgl-popup");
+    popup.style.left = "10px";
+  });
+  moveAside[1].style.margin = "-10px";
+  moveAside[1].addEventListener("mousedown", function() {
+    const popup = document.getElementsByClassName("mapboxgl-popup");
+    popup.style.left = "10px";
+  });
 }
 
