@@ -167,7 +167,7 @@ window.onload = () => {
   moveAside[1].style.margin = "-10px";
   moveAside[1].addEventListener("mousedown", function() {
     const popup = document.getElementsByClassName("mapboxgl-popup");
-    popup.style.left = "10px";
+    popup.style.left = "-10px";
   });
 }
 
