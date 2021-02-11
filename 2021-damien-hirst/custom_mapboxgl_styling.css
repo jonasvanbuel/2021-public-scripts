@@ -26,8 +26,12 @@ display: none;
   box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px;
 }
 
-.mapboxgl-popup-content > h3 {
+.mapboxgl-popup-content h3 {
   text-align: center;
+}
+
+.mapboxgl-popup-content h3:hover {
+  font-weight: 500;
 }
 
 .mapboxgl-popup-content > a {
