@@ -33,9 +33,16 @@ display: none;
   margin-top: 0;
 }
 
-.mapboxgl-popup-content > a.popupExhibitionType {
+.mapboxgl-popup-content > p.popupExhibitionType {
   font-size: 12px;
   text-align: center;
+}
+
+.mapboxgl-popup-content a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
 }
 
 .mapboxgl-popup-content > a:hover {
