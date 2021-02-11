@@ -157,16 +157,16 @@ window.onload = () => {
       .addTo(map)
   });
 
-  // Move church dots aside
+  // Move church dots + popups aside
   const moveAside = document.querySelectorAll('.move-aside');
   moveAside[0].style.margin = "10px";
-  moveAside[0].addEventListener("mousedown", function() {
+  moveAside[0].addEventListener("mouseup", function() {
     console.log('eventListener triggered...');
     const popup = document.getElementsByClassName("mapboxgl-popup");
     popup[0].style.left = "10px";
   });
   moveAside[1].style.margin = "-10px";
-  moveAside[1].addEventListener("mousedown", function() {
+  moveAside[1].addEventListener("mouseup", function() {
     console.log('eventListener triggered...');
     const popup = document.getElementsByClassName("mapboxgl-popup");
     popup[0].style.left = "-10px";
