@@ -36,6 +36,8 @@ display: none;
 .mapboxgl-popup-content > p.popupExhibitionType {
   font-size: 12px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .mapboxgl-popup-content a {
@@ -45,7 +47,11 @@ display: none;
   text-decoration: none;
 }
 
-.mapboxgl-popup-content > a:hover {
+.mapboxgl-popup-content.popupTitle a:hover {
+  font-weight: 600;
+}
+
+.mapboxgl-popup-content.popupExhibitionType a:hover {
   font-weight: 500;
 }
 
